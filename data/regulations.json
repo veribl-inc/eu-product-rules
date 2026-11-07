@@ -1,0 +1,995 @@
+{
+  "source": "Veribl reviewed catalog (https://veribl.com)",
+  "lastReviewed": "2026-10-22",
+  "generated": "2026-11-07",
+  "license": "CC BY 4.0",
+  "statuses": {
+    "in_force": "In force",
+    "dpp_dated": "Passport date set in law",
+    "planned": "Planned (indicative dates)"
+  },
+  "regulations": [
+    {
+      "slug": "espr-dpp-core",
+      "market": "EU",
+      "name": "ESPR – Digital Product Passport (framework)",
+      "reference": "Regulation (EU) 2024/1781",
+      "description": "The Ecodesign for Sustainable Products Regulation sets up the passport: a unique identifier, a data carrier (e.g. QR), registration in the EU DPP Registry and access rights. What goes in a passport, and from when, is set per product group by delegated acts. None of those acts has been adopted yet, so on its own this rule requires no passport: use these basics for a voluntary passport or to prepare early.",
+      "status": "in_force",
+      "statusNote": "In force since 18 Jul 2024 · passport content and dates set per product group",
+      "keyDate": "2024-07-18",
+      "documentationUrl": "https://eur-lex.europa.eu/eli/reg/2024/1781/oj",
+      "categories": [],
+      "appliesToAllProducts": true,
+      "requirements": [
+        {
+          "code": "core.identifier",
+          "name": "Unique product identifier (GTIN)",
+          "help": "The identifier the QR code links to. Use the product’s GTIN/EAN.",
+          "mandatory": true,
+          "dataType": "text"
+        },
+        {
+          "code": "core.model",
+          "name": "Model identifier",
+          "help": "The model or type number.",
+          "mandatory": true,
+          "dataType": "text"
+        },
+        {
+          "code": "core.operator",
+          "name": "Economic operator",
+          "help": "Name and address of the manufacturer or importer responsible for the product.",
+          "mandatory": true,
+          "dataType": "name-and-address"
+        },
+        {
+          "code": "core.description",
+          "name": "Product description",
+          "help": "What the product is.",
+          "mandatory": true,
+          "dataType": "text"
+        },
+        {
+          "code": "core.guides",
+          "name": "Use and care guides",
+          "help": "Instructions for use, care and repair, published for this product.",
+          "mandatory": true,
+          "dataType": "instructions"
+        },
+        {
+          "code": "core.recycling",
+          "name": "Disposal and recycling instructions",
+          "help": "How to dispose of or recycle the product at the end of its life.",
+          "mandatory": true,
+          "dataType": "instructions"
+        },
+        {
+          "code": "core.materials",
+          "name": "Material composition",
+          "help": "Main materials and their share of the product weight.",
+          "mandatory": true,
+          "dataType": "composition"
+        },
+        {
+          "code": "core.soc",
+          "name": "Substances of concern",
+          "help": "List substances of concern, or declare that none are above 0.1% by weight.",
+          "mandatory": true,
+          "dataType": "substance-declaration"
+        },
+        {
+          "code": "core.recycled",
+          "name": "Recycled content",
+          "help": "Share of recycled material in the product.",
+          "mandatory": false,
+          "dataType": "number",
+          "unit": "%"
+        },
+        {
+          "code": "core.lifetime",
+          "name": "Expected lifetime",
+          "help": "Durability: expected lifetime in years.",
+          "mandatory": false,
+          "dataType": "number"
+        },
+        {
+          "code": "core.carbon",
+          "name": "Carbon footprint",
+          "help": "Product carbon footprint in kg CO2e (method stated).",
+          "mandatory": false,
+          "dataType": "number"
+        }
+      ]
+    },
+    {
+      "slug": "battery-passport",
+      "market": "EU",
+      "name": "Batteries – Battery passport",
+      "reference": "Regulation (EU) 2023/1542, Art. 77 & Annex XIII",
+      "description": "A passport for each individual EV battery, light-means-of-transport battery (e-bikes, e-scooters) and industrial battery above 2 kWh. Public part: Annex XIII point 1. Carbon footprint, recycled content and due diligence apply on their own later dates.",
+      "status": "dpp_dated",
+      "statusNote": "Passport mandatory from 18 Feb 2027",
+      "keyDate": "2027-02-18",
+      "documentationUrl": "https://single-market-economy.ec.europa.eu/single-market/digital-product-passport/eu-digital-product-passport-faq-batteries_en",
+      "categories": [
+        "ebike",
+        "e-bike",
+        "electric bicycle",
+        "escooter",
+        "e-scooter",
+        "lmt",
+        "ev battery",
+        "traction battery",
+        "industrial battery",
+        "home battery",
+        "energy storage"
+      ],
+      "appliesToAllProducts": false,
+      "requirements": [
+        {
+          "code": "bat.identifier",
+          "name": "Battery model identifier (GTIN)",
+          "help": "Annex VI A · Public · The passport address and each battery’s QR code are built from it; each battery adds its serial number.",
+          "mandatory": true,
+          "dataType": "text"
+        },
+        {
+          "code": "bat.battery_category",
+          "name": "Battery category",
+          "help": "Annex VI A · Public",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.manufacturer_info",
+          "name": "Manufacturer",
+          "help": "Annex VI A · Public · Name, registered trade name or mark, postal address, web address and email.",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.manufacturing_place",
+          "name": "Place of manufacture",
+          "help": "Annex VI A · Public",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.battery_weight_kg",
+          "name": "Weight",
+          "help": "Annex VI A · Public",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.warranty_calendar_years",
+          "name": "Commercial warranty for calendar life",
+          "help": "Annex XIII 1(m) · Public",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.markings",
+          "name": "Meaning of labels and symbols",
+          "help": "Annex XIII 1(q), Art. 13 · Public · E.g. separate collection symbol, Cd/Pb symbols, capacity marking.",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.declaration_of_conformity_url",
+          "name": "EU declaration of conformity",
+          "help": "Annex XIII 1(r), Art. 18 · Public",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.test_reports",
+          "name": "Test reports proving compliance",
+          "help": "Annex XIII 3 · Authorities · Links to the test reports (one per line).",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.chemistry",
+          "name": "Battery chemistry",
+          "help": "Annex VI A, XIII 1(b) · Public · E.g. Li-ion NMC 811, LFP.",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.hazardous_substances",
+          "name": "Hazardous substances (other than Hg, Cd, Pb)",
+          "help": "Annex VI A, XIII 1(b) · Public",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.critical_raw_materials",
+          "name": "Critical raw materials above 0.1% w/w",
+          "help": "Annex VI A, XIII 1(b) · Public",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.extinguishing_agent",
+          "name": "Usable extinguishing agent",
+          "help": "Annex VI A · Public",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.detailed_composition",
+          "name": "Detailed composition (cathode, anode, electrolyte)",
+          "help": "Annex XIII 2(a) · Legitimate interest",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.carbon_footprint_kgco2e_kwh",
+          "name": "Carbon footprint",
+          "help": "Annex XIII 1(c), Art. 7 · Public · Applies from the category-specific date set under Art. 7. · Applies later, on its own date",
+          "mandatory": false,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.carbon_footprint_class",
+          "name": "Carbon footprint performance class",
+          "help": "Annex XIII 1(c), Art. 7 · Public · Applies later, on its own date",
+          "mandatory": false,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.carbon_footprint_declaration_url",
+          "name": "Carbon footprint declaration",
+          "help": "Art. 7(1) · Public · Applies later, on its own date",
+          "mandatory": false,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.due_diligence_report_url",
+          "name": "Due diligence policy report",
+          "help": "Annex XIII 1(d), Art. 52(3) · Public · Due diligence obligations apply from 18 Aug 2027. · Applies later, on its own date",
+          "mandatory": false,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.recycled_content",
+          "name": "Recycled content (Co, Li, Ni, Pb)",
+          "help": "Annex XIII 1(e), Art. 8 · Public · Applies later, on its own date",
+          "mandatory": false,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.renewable_content_share",
+          "name": "Share of renewable content",
+          "help": "Annex XIII 1(f) · Public",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.waste_prevention",
+          "name": "Prevention and management of waste batteries",
+          "help": "Annex XIII 1(s), Art. 74(1)(a–f) · Public · Take-back and collection points, preparation for re-use and repurposing, treatment.",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.spare_parts",
+          "name": "Spare part numbers and sources",
+          "help": "Annex XIII 2(b) · Legitimate interest",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.dismantling",
+          "name": "Dismantling information",
+          "help": "Annex XIII 2(c) · Legitimate interest · Exploded diagrams, disassembly sequence, fasteners, tools, warnings, number and layout of cells (links welcome).",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.safety_measures",
+          "name": "Safety measures",
+          "help": "Annex XIII 2(d) · Legitimate interest",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.rated_capacity_ah",
+          "name": "Rated capacity",
+          "help": "Annex XIII 1(g) · Public",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.voltage_min_v",
+          "name": "Minimal voltage",
+          "help": "Annex XIII 1(h) · Public",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.voltage_nominal_v",
+          "name": "Nominal voltage",
+          "help": "Annex XIII 1(h) · Public",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.voltage_max_v",
+          "name": "Maximum voltage",
+          "help": "Annex XIII 1(h) · Public",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.power_capability_w",
+          "name": "Original power capability and limits",
+          "help": "Annex XIII 1(i) · Public · With the temperature range where relevant.",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.cycle_life",
+          "name": "Expected lifetime in cycles",
+          "help": "Annex XIII 1(j) · Public",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.cycle_life_test",
+          "name": "Reference test for cycle life",
+          "help": "Annex XIII 1(j) · Public",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.capacity_exhaustion_threshold",
+          "name": "Capacity threshold for exhaustion (EV only)",
+          "help": "Annex XIII 1(k) · Public",
+          "mandatory": false,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.temperature_range_idle",
+          "name": "Temperature range when not in use",
+          "help": "Annex XIII 1(l) · Public · With the reference test.",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.round_trip_efficiency_initial",
+          "name": "Initial round-trip energy efficiency",
+          "help": "Annex XIII 1(n) · Public",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.round_trip_efficiency_50",
+          "name": "Round-trip energy efficiency at 50% of cycle life",
+          "help": "Annex XIII 1(n) · Public",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.internal_resistance",
+          "name": "Internal cell and pack resistance",
+          "help": "Annex XIII 1(o) · Public",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.c_rate",
+          "name": "C-rate of the cycle-life test",
+          "help": "Annex XIII 1(p) · Public",
+          "mandatory": true,
+          "dataType": "battery-field"
+        },
+        {
+          "code": "bat.registry.operator",
+          "name": "Operator identifier for the EU registry",
+          "help": "Recommended: your EORI number or GS1 GLN, used when the passport is registered in the EU DPP registry.",
+          "mandatory": false,
+          "dataType": "identifier"
+        },
+        {
+          "code": "bat.registry.cn",
+          "name": "Commodity code (CN)",
+          "help": "Recommended: the customs code for this battery, used when the passport is registered for products imported into the EU.",
+          "mandatory": false,
+          "dataType": "identifier"
+        }
+      ]
+    },
+    {
+      "slug": "detergents-dpp",
+      "market": "EU",
+      "name": "Detergents – product passport",
+      "reference": "Regulation (EU) 2026/405",
+      "description": "The new Detergents Regulation requires a passport for each detergent model. Content follows the regulation’s labelling and ingredient rules.",
+      "status": "dpp_dated",
+      "statusNote": "Passport mandatory from 23 Sep 2029",
+      "keyDate": "2029-09-23",
+      "documentationUrl": "https://eur-lex.europa.eu/eli/reg/2026/405/oj",
+      "categories": [
+        "detergent",
+        "detergents",
+        "cleaning"
+      ],
+      "appliesToAllProducts": false,
+      "requirements": [
+        {
+          "code": "det.identifier",
+          "name": "Unique product identifier (GTIN)",
+          "help": "The identifier the passport and its QR code are built from.",
+          "mandatory": true,
+          "dataType": "text"
+        },
+        {
+          "code": "det.operator",
+          "name": "Economic operator",
+          "help": "Name and address of the manufacturer or importer.",
+          "mandatory": true,
+          "dataType": "name-and-address"
+        },
+        {
+          "code": "det.doc",
+          "name": "EU declaration of conformity",
+          "help": "The passport starts from the EU declaration of conformity (Annex VI Part A).",
+          "mandatory": true,
+          "dataType": "document"
+        },
+        {
+          "code": "det.ingredients",
+          "name": "Ingredient list",
+          "help": "Ingredients as required by the regulation, entered as the composition.",
+          "mandatory": true,
+          "dataType": "composition"
+        },
+        {
+          "code": "det.hazards",
+          "name": "Hazard classification",
+          "help": "Hazardous substances under CLP, or declare the mixture isn’t classified as hazardous.",
+          "mandatory": true,
+          "dataType": "substance-declaration"
+        },
+        {
+          "code": "det.dosage",
+          "name": "Dosage instructions",
+          "help": "Recommended dosage.",
+          "mandatory": true,
+          "dataType": "text"
+        },
+        {
+          "code": "det.registry.cn",
+          "name": "Commodity code (CN)",
+          "help": "Required when the detergent is imported into the EU (released for free circulation): customs check the registry entry against this code before release (Art. 25). Recommended otherwise.",
+          "mandatory": false,
+          "dataType": "identifier"
+        },
+        {
+          "code": "det.registry.operator",
+          "name": "Operator identifier for the EU registry",
+          "help": "Recommended: your EORI number or GS1 GLN for registering the passport.",
+          "mandatory": false,
+          "dataType": "identifier"
+        }
+      ]
+    },
+    {
+      "slug": "toys-dpp",
+      "market": "EU",
+      "name": "Toys – product passport",
+      "reference": "Regulation (EU) 2025/2509 (Toy Safety Regulation)",
+      "description": "Toys placed on the EU market need a passport showing compliance with the safety rules, replacing the paper EU declaration of conformity.",
+      "status": "dpp_dated",
+      "statusNote": "Passport mandatory from 1 Aug 2030",
+      "keyDate": "2030-08-01",
+      "documentationUrl": "https://eur-lex.europa.eu/eli/reg/2025/2509/oj",
+      "categories": [
+        "toy",
+        "toys"
+      ],
+      "appliesToAllProducts": false,
+      "requirements": [
+        {
+          "code": "toy.identifier",
+          "name": "Unique product identifier (GTIN)",
+          "help": "The identifier the passport and its QR code are built from.",
+          "mandatory": true,
+          "dataType": "text"
+        },
+        {
+          "code": "toy.operator",
+          "name": "Economic operator",
+          "help": "Name and address of the manufacturer or importer.",
+          "mandatory": true,
+          "dataType": "name-and-address"
+        },
+        {
+          "code": "toy.ce",
+          "name": "CE marking and conformity",
+          "help": "The passport replaces the EU declaration of conformity for toys.",
+          "mandatory": true,
+          "dataType": "document"
+        },
+        {
+          "code": "toy.substances",
+          "name": "Substances",
+          "help": "Substances the regulation requires you to declare, or declare none above the limits.",
+          "mandatory": true,
+          "dataType": "substance-declaration"
+        },
+        {
+          "code": "toy.warnings",
+          "name": "Warnings",
+          "help": "Age and safety warnings.",
+          "mandatory": true,
+          "dataType": "text"
+        },
+        {
+          "code": "toy.registry.operator",
+          "name": "Operator identifier for the EU registry",
+          "help": "Uploaded to the EU DPP registry with the product identifier before the toy is placed on the market.",
+          "mandatory": true,
+          "dataType": "identifier"
+        },
+        {
+          "code": "toy.registry.cn",
+          "name": "Commodity code (CN)",
+          "help": "Needed in the registry for toys imported into the EU (customs).",
+          "mandatory": false,
+          "dataType": "identifier"
+        }
+      ]
+    },
+    {
+      "slug": "espr-iron-steel",
+      "market": "EU",
+      "name": "ESPR – Iron & steel",
+      "reference": "ESPR delegated act (planned)",
+      "description": "One of the first product groups in the ESPR working plan. The delegated act is in preparation; its content (expected: embodied carbon, recycled content) is not final.",
+      "status": "planned",
+      "statusNote": "Adoption expected Q4 2026 · passport around 2028 (indicative)",
+      "keyDate": "2028-01-01",
+      "documentationUrl": "https://single-market-economy.ec.europa.eu/single-market/digital-product-passport_en",
+      "categories": [
+        "steel",
+        "iron"
+      ],
+      "appliesToAllProducts": false,
+      "requirements": [
+        {
+          "code": "steel.carbon",
+          "name": "Embodied carbon",
+          "help": "Indicative: expected in the act.",
+          "mandatory": true,
+          "dataType": "number"
+        },
+        {
+          "code": "steel.recycled",
+          "name": "Recycled content",
+          "help": "Indicative: expected in the act.",
+          "mandatory": true,
+          "dataType": "number",
+          "unit": "%"
+        },
+        {
+          "code": "steel.route",
+          "name": "Production route",
+          "help": "Indicative, e.g. BF-BOF or EAF.",
+          "mandatory": false,
+          "dataType": "text"
+        }
+      ]
+    },
+    {
+      "slug": "espr-textiles",
+      "market": "EU",
+      "name": "ESPR – Textiles & apparel",
+      "reference": "ESPR delegated act (planned)",
+      "description": "Planned for garments and textiles. No draft act yet; preparatory studies point to fibre composition, durability and recyclability.",
+      "status": "planned",
+      "statusNote": "Adoption expected Q3–Q4 2027 · passport 2029 at the earliest (indicative)",
+      "keyDate": "2029-01-01",
+      "documentationUrl": "https://single-market-economy.ec.europa.eu/single-market/digital-product-passport_en",
+      "categories": [
+        "textile",
+        "apparel",
+        "clothing",
+        "garment",
+        "fabric",
+        "knitwear",
+        "home textile",
+        "bedding",
+        "bed linen",
+        "towel"
+      ],
+      "appliesToAllProducts": false,
+      "requirements": [
+        {
+          "code": "tex.fibres",
+          "name": "Fibre composition",
+          "help": "Indicative: fibres by weight %.",
+          "mandatory": true,
+          "dataType": "composition"
+        },
+        {
+          "code": "tex.care",
+          "name": "Care instructions",
+          "help": "Indicative.",
+          "mandatory": true,
+          "dataType": "text"
+        },
+        {
+          "code": "tex.origin",
+          "name": "Country of manufacture",
+          "help": "Indicative.",
+          "mandatory": false,
+          "dataType": "text"
+        },
+        {
+          "code": "tex.recyclability",
+          "name": "Recyclability",
+          "help": "Indicative.",
+          "mandatory": false,
+          "dataType": "number",
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "slug": "eu-textile-labelling",
+      "market": "EU",
+      "name": "Textile Labelling – Fibre composition",
+      "reference": "Regulation (EU) No 1007/2011",
+      "description": "Every textile product sold in the EU carries a label or marking with its full fibre composition: each fibre by its EU name (Annex I) and percentage by weight, in descending order. Products with non-textile parts of animal origin (leather trims, fur, bone buttons) must say so. Care symbols and country of origin are not required by EU law. A revision is expected alongside the ESPR textiles act.",
+      "status": "in_force",
+      "statusNote": "Applies since 8 May 2012",
+      "keyDate": "2012-05-08",
+      "documentationUrl": "https://eur-lex.europa.eu/eli/reg/2011/1007/oj",
+      "categories": [
+        "textile",
+        "apparel",
+        "clothing",
+        "garment",
+        "fabric",
+        "knitwear",
+        "home textile",
+        "bedding",
+        "bed linen",
+        "towel"
+      ],
+      "appliesToAllProducts": false,
+      "keptOnFile": true,
+      "requirements": [
+        {
+          "code": "txl.fibres",
+          "name": "Fibre composition",
+          "help": "Every fibre by its EU name and % by weight, in descending order. Fibres of up to 5% each (15% together) that are hard to state may be grouped as “other fibres”. Enter them as the composition.",
+          "mandatory": true,
+          "dataType": "composition"
+        },
+        {
+          "code": "txl.label",
+          "name": "Durable fibre label",
+          "help": "Art. 14 and 16: the label is durable, legible and securely attached, and the composition is in the official language(s) of each EU country where the product is sold.",
+          "mandatory": true,
+          "dataType": "statement"
+        },
+        {
+          "code": "txl.animal",
+          "name": "Non-textile parts of animal origin",
+          "help": "Art. 12: products with leather, fur, bone or horn parts say “Contains non-textile parts of animal origin” on the label.",
+          "mandatory": true,
+          "dataType": "statement"
+        },
+        {
+          "code": "txl.care",
+          "name": "Care instructions",
+          "help": "Not required by EU law; most brands use the GINETEX / ISO 3758 care symbols.",
+          "mandatory": false,
+          "dataType": "text"
+        }
+      ]
+    },
+    {
+      "slug": "france-agec-textiles",
+      "market": "FR",
+      "name": "France AGEC – Textile product information",
+      "reference": "French Environment Code Art. L541-9-1 · Décret n° 2022-748",
+      "description": "France’s anti-waste law (AGEC): companies selling new clothing, household linen and home textiles in France publish environmental information for each product on a product sheet online, free and easy to find. Phased in by size, counting sales in France: from 1 Jan 2023 above €50M turnover and 25,000 units a year; from 1 Jan 2024 above €20M and 10,000 units; from 1 Jan 2025 above €10M and 10,000 units. Smaller companies are not covered.",
+      "status": "in_force",
+      "statusNote": "Applies since 1 Jan 2023 · companies above €10M turnover and 10,000 units in France since 1 Jan 2025",
+      "keyDate": "2023-01-01",
+      "documentationUrl": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000045726094",
+      "categories": [
+        "textile",
+        "apparel",
+        "clothing",
+        "garment",
+        "fabric",
+        "knitwear",
+        "home textile",
+        "bedding",
+        "bed linen",
+        "towel"
+      ],
+      "appliesToAllProducts": false,
+      "keptOnFile": true,
+      "requirements": [
+        {
+          "code": "agec.weaving",
+          "name": "Country of weaving or knitting",
+          "help": "Traceability: the country where the fabric was woven or knitted.",
+          "mandatory": true,
+          "dataType": "text"
+        },
+        {
+          "code": "agec.dyeing",
+          "name": "Country of dyeing and printing",
+          "help": "Traceability: the country where the fabric was dyed and printed.",
+          "mandatory": true,
+          "dataType": "text"
+        },
+        {
+          "code": "agec.making",
+          "name": "Country of manufacture",
+          "help": "Traceability: the country where the product was made up (cut and sewn).",
+          "mandatory": true,
+          "dataType": "text"
+        },
+        {
+          "code": "agec.microfibres",
+          "name": "Plastic microfibre statement",
+          "help": "When synthetic fibres are more than 50% of the weight, the product sheet carries the exact wording « rejette des microfibres plastiques dans l’environnement lors du lavage ».",
+          "mandatory": true,
+          "dataType": "statement"
+        },
+        {
+          "code": "agec.svhc",
+          "name": "Hazardous substances",
+          "help": "Name any REACH Candidate List substance (SVHC) above 0.1% by weight, or record that there are none.",
+          "mandatory": true,
+          "dataType": "substance-declaration"
+        },
+        {
+          "code": "agec.recycled",
+          "name": "Recycled content",
+          "help": "The share of recycled material, stated when the product contains any.",
+          "mandatory": false,
+          "dataType": "number",
+          "unit": "%"
+        },
+        {
+          "code": "agec.sheet",
+          "name": "Published product sheet",
+          "help": "Art. R541-222: the information is online, free to access, easy to find and linked to the product reference.",
+          "mandatory": true,
+          "dataType": "statement"
+        }
+      ]
+    },
+    {
+      "slug": "espr-furniture",
+      "market": "EU",
+      "name": "ESPR – Furniture",
+      "reference": "ESPR delegated act (planned)",
+      "description": "Planned in the ESPR working plan. Content not defined yet; expected to cover durability, repairability and materials.",
+      "status": "planned",
+      "statusNote": "Adoption expected 2028 · passport date not set (indicative)",
+      "keyDate": null,
+      "documentationUrl": "https://single-market-economy.ec.europa.eu/single-market/digital-product-passport_en",
+      "categories": [
+        "furniture",
+        "mattress"
+      ],
+      "appliesToAllProducts": false,
+      "requirements": [
+        {
+          "code": "fur.materials",
+          "name": "Material composition",
+          "help": "Indicative.",
+          "mandatory": true,
+          "dataType": "composition"
+        },
+        {
+          "code": "fur.spare",
+          "name": "Spare parts availability",
+          "help": "Indicative.",
+          "mandatory": false,
+          "dataType": "number",
+          "unit": "years"
+        }
+      ]
+    },
+    {
+      "slug": "ecodesign-displays",
+      "market": "EU",
+      "name": "Ecodesign – Electronic displays",
+      "reference": "Regulation (EU) 2019/2021 (under the Ecodesign Directive)",
+      "description": "Rules for TVs, monitors and signage displays: energy efficiency, repair and recycling, spare parts and repair information for 7 years. Product information is published via the EU energy label database (EPREL). A revision under ESPR is planned.",
+      "status": "in_force",
+      "statusNote": "Applies since 1 Mar 2021 · ESPR revision planned for 2027",
+      "keyDate": "2021-03-01",
+      "documentationUrl": "https://eur-lex.europa.eu/eli/reg/2019/2021/oj",
+      "categories": [
+        "tv",
+        "television",
+        "computer monitor",
+        "pc monitor",
+        "signage display",
+        "electronic display"
+      ],
+      "appliesToAllProducts": false,
+      "requirements": [
+        {
+          "code": "disp.energy",
+          "name": "Energy class",
+          "help": "From the EU energy label.",
+          "mandatory": true,
+          "dataType": "text"
+        },
+        {
+          "code": "disp.spares",
+          "name": "Spare parts availability (years)",
+          "help": "At least 7 years after the last unit is placed on the market.",
+          "mandatory": true,
+          "dataType": "number",
+          "unit": "years"
+        },
+        {
+          "code": "disp.repair",
+          "name": "Repair information for professional repairers",
+          "help": "Repair and maintenance information must be available to registered professional repairers.",
+          "mandatory": true,
+          "dataType": "statement"
+        },
+        {
+          "code": "disp.diagonal",
+          "name": "Screen diagonal",
+          "help": "In cm.",
+          "mandatory": false,
+          "dataType": "number",
+          "unit": "cm"
+        }
+      ]
+    },
+    {
+      "slug": "ecodesign-household-appliances",
+      "market": "EU",
+      "name": "Ecodesign – Washing machines, dishwashers, fridges",
+      "reference": "Regulations (EU) 2019/2023, 2019/2022 and 2019/2019 (under the Ecodesign Directive)",
+      "description": "Energy, water, repair and spare-parts rules for household washing machines, dishwashers and refrigerating appliances. Product information is published via EPREL. Revisions under ESPR are planned. Small appliances such as kettles are not covered.",
+      "status": "in_force",
+      "statusNote": "Applies since 1 Mar 2021 · ESPR revisions planned from 2026",
+      "keyDate": "2021-03-01",
+      "documentationUrl": "https://eur-lex.europa.eu/eli/reg/2019/2023/oj",
+      "categories": [
+        "washing_machine",
+        "dishwasher",
+        "refrigerator",
+        "fridge"
+      ],
+      "appliesToAllProducts": false,
+      "requirements": [
+        {
+          "code": "app.energy",
+          "name": "Energy class",
+          "help": "From the EU energy label.",
+          "mandatory": true,
+          "dataType": "text"
+        },
+        {
+          "code": "app.spares",
+          "name": "Spare parts availability (years)",
+          "help": "7 or 10 years depending on the part.",
+          "mandatory": true,
+          "dataType": "number",
+          "unit": "years"
+        },
+        {
+          "code": "app.repair",
+          "name": "Repair information for professional repairers",
+          "help": "Repair and maintenance information must be available to registered professional repairers.",
+          "mandatory": true,
+          "dataType": "statement"
+        },
+        {
+          "code": "app.capacity",
+          "name": "Rated capacity",
+          "help": "kg for washing machines, place settings for dishwashers, liters for fridges.",
+          "mandatory": false,
+          "dataType": "text"
+        }
+      ]
+    },
+    {
+      "slug": "rohs",
+      "market": "EU",
+      "name": "RoHS – Hazardous substances in electronics",
+      "reference": "Directive 2011/65/EU",
+      "description": "Limits lead, mercury, cadmium, hexavalent chromium, PBB, PBDE and four phthalates in electrical and electronic equipment.",
+      "status": "in_force",
+      "statusNote": "In force",
+      "keyDate": "2011-07-21",
+      "documentationUrl": "https://eur-lex.europa.eu/eli/dir/2011/65/oj",
+      "categories": [
+        "electronics",
+        "electronic",
+        "electrical",
+        "appliance",
+        "e-bike",
+        "ebike",
+        "electric bike",
+        "electric bicycle",
+        "pedelec",
+        "e-scooter",
+        "electric scooter"
+      ],
+      "appliesToAllProducts": false,
+      "requirements": [
+        {
+          "code": "rohs.doc",
+          "name": "Declaration of conformity covering RoHS",
+          "help": "Usually part of your CE declaration. Keep the technical documentation (test reports) on file for the authorities.",
+          "mandatory": true,
+          "dataType": "document"
+        }
+      ]
+    },
+    {
+      "slug": "reach",
+      "market": "EU",
+      "name": "REACH – Substances of very high concern",
+      "reference": "Regulation (EC) 1907/2006, Art. 33",
+      "description": "Articles containing a substance of very high concern (Candidate List) above 0.1% by weight must come with information on safe use; under the Waste Framework Directive, suppliers also notify such articles to ECHA’s SCIP database.",
+      "status": "in_force",
+      "statusNote": "In force",
+      "keyDate": "2007-06-01",
+      "documentationUrl": "https://echa.europa.eu/regulations/reach/understanding-reach",
+      "categories": [],
+      "appliesToAllProducts": true,
+      "requirements": [
+        {
+          "code": "reach.svhc",
+          "name": "SVHC declaration",
+          "help": "Declare Candidate List substances above 0.1%, or record that there are none.",
+          "mandatory": true,
+          "dataType": "substance-declaration"
+        },
+        {
+          "code": "reach.scip",
+          "name": "SCIP notification",
+          "help": "Waste Framework Directive, not REACH: needed only if an SVHC is present above 0.1%.",
+          "mandatory": false,
+          "dataType": "document"
+        }
+      ]
+    },
+    {
+      "slug": "ppwr-packaging",
+      "market": "EU",
+      "name": "PPWR – Packaging declaration of conformity",
+      "reference": "Regulation (EU) 2025/40",
+      "description": "Since 12 August 2026 all packaging placed on the EU market must meet the Packaging and Packaging Waste Regulation. The brand whose name or trademark is on the packaging is its manufacturer (Art. 3(1)(13)): it assesses each packaging type itself (Annex VII), keeps the technical documentation and signs an EU declaration of conformity per packaging type (Art. 39, Annex VIII). Applies today: heavy metals at most 100 mg/kg (Art. 5(4)), PFAS limits for food-contact packaging (Art. 5(5)), recyclable design (Art. 6(1)) and re-use rules for reusable packaging (Art. 11). Micro-enterprises whose packaging supplier is in the same EU country can leave this to that supplier.",
+      "status": "in_force",
+      "statusNote": "Applies since 12 Aug 2026 · one declaration per packaging type",
+      "keyDate": "2026-08-12",
+      "documentationUrl": "https://eur-lex.europa.eu/eli/reg/2025/40/oj",
+      "categories": [],
+      "appliesToAllProducts": true,
+      "keptOnFile": true,
+      "requirements": [
+        {
+          "code": "ppwr.declaration",
+          "name": "Packaging with a signed declaration of conformity",
+          "help": "Each packaging type the product is sold in needs a current EU declaration of conformity, signed after its last change.",
+          "mandatory": true,
+          "dataType": "document"
+        }
+      ]
+    }
+  ]
+}

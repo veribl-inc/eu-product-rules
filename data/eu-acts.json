@@ -1,0 +1,326 @@
+{
+  "source": "Veribl reviewed catalog (https://veribl.com)",
+  "lastReviewed": "2026-10-22",
+  "generated": "2026-11-07",
+  "license": "CC BY 4.0",
+  "acts": [
+    {
+      "id": "espr",
+      "celex": "32024R1781",
+      "shortName": "ESPR",
+      "reference": "Regulation (EU) 2024/1781",
+      "aliases": [
+        "espr",
+        "ecodesign for sustainable products regulation",
+        "ecodesign regulation",
+        "2024/1781"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1781",
+      "eliUrl": "https://eur-lex.europa.eu/eli/reg/2024/1781/oj"
+    },
+    {
+      "id": "batteries",
+      "celex": "32023R1542",
+      "shortName": "Batteries Regulation",
+      "reference": "Regulation (EU) 2023/1542",
+      "aliases": [
+        "batteries regulation",
+        "battery regulation",
+        "eu battery regulation",
+        "2023/1542"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1542",
+      "eliUrl": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj"
+    },
+    {
+      "id": "detergents",
+      "celex": "32026R0405",
+      "shortName": "Detergents Regulation",
+      "reference": "Regulation (EU) 2026/405",
+      "aliases": [
+        "detergents regulation",
+        "detergent regulation",
+        "2026/405"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R0405",
+      "eliUrl": "https://eur-lex.europa.eu/eli/reg/2026/405/oj"
+    },
+    {
+      "id": "right-to-repair",
+      "celex": "32024L1799",
+      "shortName": "Right to Repair Directive",
+      "reference": "Directive (EU) 2024/1799",
+      "aliases": [
+        "right to repair directive",
+        "right to repair",
+        "r2r",
+        "repair directive",
+        "2024/1799"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024L1799",
+      "eliUrl": "https://eur-lex.europa.eu/eli/dir/2024/1799/oj"
+    },
+    {
+      "id": "energy-labelling",
+      "celex": "32017R1369",
+      "shortName": "Energy Labelling Regulation",
+      "reference": "Regulation (EU) 2017/1369",
+      "aliases": [
+        "energy labelling regulation",
+        "energy labeling regulation",
+        "energy label regulation",
+        "2017/1369"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R1369",
+      "eliUrl": "https://eur-lex.europa.eu/eli/reg/2017/1369/oj"
+    },
+    {
+      "id": "ecodesign-displays",
+      "celex": "32019R2021",
+      "shortName": "Ecodesign (electronic displays)",
+      "reference": "Commission Regulation (EU) 2019/2021",
+      "aliases": [
+        "2019/2021",
+        "ecodesign displays"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019R2021",
+      "eliUrl": "https://eur-lex.europa.eu/eli/reg/2019/2021/oj"
+    },
+    {
+      "id": "ecodesign-washing-machines",
+      "celex": "32019R2023",
+      "shortName": "Ecodesign (washing machines)",
+      "reference": "Commission Regulation (EU) 2019/2023",
+      "aliases": [
+        "2019/2023",
+        "ecodesign washing machines"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019R2023",
+      "eliUrl": "https://eur-lex.europa.eu/eli/reg/2019/2023/oj"
+    },
+    {
+      "id": "ecodesign-dishwashers",
+      "celex": "32019R2022",
+      "shortName": "Ecodesign (dishwashers)",
+      "reference": "Commission Regulation (EU) 2019/2022",
+      "aliases": [
+        "2019/2022",
+        "ecodesign dishwashers"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019R2022",
+      "eliUrl": "https://eur-lex.europa.eu/eli/reg/2019/2022/oj"
+    },
+    {
+      "id": "ecodesign-refrigerators",
+      "celex": "32019R2019",
+      "shortName": "Ecodesign (refrigerating appliances)",
+      "reference": "Commission Regulation (EU) 2019/2019",
+      "aliases": [
+        "2019/2019",
+        "ecodesign fridges",
+        "ecodesign refrigerators"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019R2019",
+      "eliUrl": "https://eur-lex.europa.eu/eli/reg/2019/2019/oj"
+    },
+    {
+      "id": "gpsr",
+      "celex": "32023R0988",
+      "shortName": "GPSR",
+      "reference": "Regulation (EU) 2023/988",
+      "aliases": [
+        "gpsr",
+        "general product safety regulation",
+        "2023/988"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R0988",
+      "eliUrl": "https://eur-lex.europa.eu/eli/reg/2023/988/oj"
+    },
+    {
+      "id": "market-surveillance",
+      "celex": "32019R1020",
+      "shortName": "Market Surveillance Regulation",
+      "reference": "Regulation (EU) 2019/1020",
+      "aliases": [
+        "market surveillance regulation",
+        "2019/1020",
+        "msr"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019R1020",
+      "eliUrl": "https://eur-lex.europa.eu/eli/reg/2019/1020/oj"
+    },
+    {
+      "id": "toys",
+      "celex": "32025R2509",
+      "shortName": "Toy Safety Regulation",
+      "reference": "Regulation (EU) 2025/2509",
+      "aliases": [
+        "toy safety regulation",
+        "toys regulation",
+        "toy regulation",
+        "tsr",
+        "2025/2509"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R2509",
+      "eliUrl": "https://eur-lex.europa.eu/eli/reg/2025/2509/oj"
+    },
+    {
+      "id": "machinery",
+      "celex": "32023R1230",
+      "shortName": "Machinery Regulation",
+      "reference": "Regulation (EU) 2023/1230",
+      "aliases": [
+        "machinery regulation",
+        "2023/1230"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1230",
+      "eliUrl": "https://eur-lex.europa.eu/eli/reg/2023/1230/oj"
+    },
+    {
+      "id": "red",
+      "celex": "32014L0053",
+      "shortName": "Radio Equipment Directive",
+      "reference": "Directive 2014/53/EU",
+      "aliases": [
+        "radio equipment directive",
+        "red",
+        "2014/53"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014L0053",
+      "eliUrl": "https://eur-lex.europa.eu/eli/dir/2014/53/oj"
+    },
+    {
+      "id": "lvd",
+      "celex": "32014L0035",
+      "shortName": "Low Voltage Directive",
+      "reference": "Directive 2014/35/EU",
+      "aliases": [
+        "low voltage directive",
+        "lvd",
+        "2014/35"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014L0035",
+      "eliUrl": "https://eur-lex.europa.eu/eli/dir/2014/35/oj"
+    },
+    {
+      "id": "emc",
+      "celex": "32014L0030",
+      "shortName": "EMC Directive",
+      "reference": "Directive 2014/30/EU",
+      "aliases": [
+        "emc directive",
+        "electromagnetic compatibility directive",
+        "emc",
+        "2014/30"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014L0030",
+      "eliUrl": "https://eur-lex.europa.eu/eli/dir/2014/30/oj"
+    },
+    {
+      "id": "eaa",
+      "celex": "32019L0882",
+      "shortName": "European Accessibility Act",
+      "reference": "Directive (EU) 2019/882",
+      "aliases": [
+        "european accessibility act",
+        "accessibility act",
+        "eaa",
+        "2019/882"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019L0882",
+      "eliUrl": "https://eur-lex.europa.eu/eli/dir/2019/882/oj"
+    },
+    {
+      "id": "textile-labelling",
+      "celex": "32011R1007",
+      "shortName": "Textile Labelling Regulation",
+      "reference": "Regulation (EU) No 1007/2011",
+      "aliases": [
+        "textile labelling regulation",
+        "textile labeling regulation",
+        "textile regulation",
+        "1007/2011"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32011R1007",
+      "eliUrl": "https://eur-lex.europa.eu/eli/reg/2011/1007/oj"
+    },
+    {
+      "id": "weee",
+      "celex": "32012L0019",
+      "shortName": "WEEE Directive",
+      "reference": "Directive 2012/19/EU",
+      "aliases": [
+        "weee directive",
+        "weee",
+        "2012/19"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32012L0019",
+      "eliUrl": "https://eur-lex.europa.eu/eli/dir/2012/19/oj"
+    },
+    {
+      "id": "rohs",
+      "celex": "32011L0065",
+      "shortName": "RoHS Directive",
+      "reference": "Directive 2011/65/EU",
+      "aliases": [
+        "rohs directive",
+        "rohs",
+        "2011/65"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32011L0065",
+      "eliUrl": "https://eur-lex.europa.eu/eli/dir/2011/65/oj"
+    },
+    {
+      "id": "ppwr",
+      "celex": "32025R0040",
+      "shortName": "PPWR",
+      "reference": "Regulation (EU) 2025/40",
+      "aliases": [
+        "ppwr",
+        "packaging and packaging waste regulation",
+        "packaging regulation",
+        "2025/40"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0040",
+      "eliUrl": "https://eur-lex.europa.eu/eli/reg/2025/40/oj"
+    },
+    {
+      "id": "waste-framework",
+      "celex": "32008L0098",
+      "shortName": "Waste Framework Directive",
+      "reference": "Directive 2008/98/EC",
+      "aliases": [
+        "waste framework directive",
+        "wfd",
+        "2008/98"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32008L0098",
+      "eliUrl": "https://eur-lex.europa.eu/eli/dir/2008/98/oj"
+    },
+    {
+      "id": "reach",
+      "celex": "32006R1907",
+      "shortName": "REACH",
+      "reference": "Regulation (EC) No 1907/2006",
+      "aliases": [
+        "reach",
+        "1907/2006"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006R1907",
+      "eliUrl": "https://eur-lex.europa.eu/eli/reg/2006/1907/oj"
+    },
+    {
+      "id": "clp",
+      "celex": "32008R1272",
+      "shortName": "CLP",
+      "reference": "Regulation (EC) No 1272/2008",
+      "aliases": [
+        "clp",
+        "clp regulation",
+        "1272/2008"
+      ],
+      "eurLexUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32008R1272",
+      "eliUrl": "https://eur-lex.europa.eu/eli/reg/2008/1272/oj"
+    }
+  ]
+}

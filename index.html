@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EU Product Rules Checker: ESPR, DPP and product law by category</title>
+<meta name="description" content="Free checker: pick a product category and see which EU rules apply (ESPR, Digital Product Passport, Batteries Regulation, Toy Safety, PPWR, RoHS, REACH, textile labelling), their key dates, the data each one asks for and direct EUR-Lex links.">
+<link rel="canonical" href="https://veribl.github.io/eu-product-rules/">
+<meta property="og:title" content="EU Product Rules Checker">
+<meta property="og:description" content="Which EU product rules apply to your product, from when, and what data they need. Open data with EUR-Lex links.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "EU product rules and Digital Product Passport requirements",
+  "description": "Open dataset of EU product rules (ESPR Digital Product Passport, Batteries Regulation battery passport, Detergents, Toy Safety, PPWR packaging, RoHS, REACH, Ecodesign, textile labelling, France AGEC) with legal status, key dates, product categories, required data fields and EUR-Lex links.",
+  "url": "https://veribl.github.io/eu-product-rules/",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "keywords": ["ESPR", "Digital Product Passport", "DPP", "EU Batteries Regulation", "battery passport", "PPWR", "Toy Safety Regulation", "RoHS", "REACH", "EUR-Lex"],
+  "creator": { "@type": "Organization", "name": "Veribl", "url": "https://veribl.com" },
+  "distribution": [
+    { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://veribl.github.io/eu-product-rules/data/regulations.json" },
+    { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://veribl.github.io/eu-product-rules/data/eu-acts.json" }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="wrap hero">
+  <h1>EU Product Rules Checker</h1>
+  <p class="lede">Pick what you sell and see which EU rules apply, from when, and what data each one asks for. Every rule links to the law on EUR-Lex.</p>
+</header>
+
+<main class="wrap">
+  <section class="panel" aria-labelledby="pick-h">
+    <h2 id="pick-h">What's the product?</h2>
+    <form id="form" autocomplete="off">
+      <label for="q" class="sr">Product category</label>
+      <input id="q" type="search" placeholder="e.g. e-bike, toy, clothing, TV, detergent" list="cats">
+      <datalist id="cats"></datalist>
+      <div class="chips" id="chips" role="group" aria-label="Common categories"></div>
+      <label class="check"><input type="checkbox" id="fr"> Also sold in France</label>
+    </form>
+  </section>
+
+  <section id="results" aria-live="polite"></section>
+
+  <section class="panel" aria-labelledby="acts-h">
+    <h2 id="acts-h">All EU acts in the dataset</h2>
+    <label for="filter" class="sr">Filter acts</label>
+    <input id="filter" type="search" placeholder="Filter by name, number or CELEX">
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Act</th><th>Reference</th><th>CELEX</th><th>Links</th></tr></thead>
+        <tbody id="acts"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel small">
+    <h2>Use the data</h2>
+    <p>Everything on this page comes from two JSON files you can use freely under CC BY 4.0:</p>
+    <ul>
+      <li><a href="data/regulations.json">data/regulations.json</a>: rules, status, key dates, categories and required fields</li>
+      <li><a href="data/eu-acts.json">data/eu-acts.json</a>: EU acts with CELEX numbers and EUR-Lex links</li>
+    </ul>
+    <p>Spotted a date that changed? <a href="https://github.com/veribl/eu-product-rules/issues">Open an issue</a>.</p>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <p><strong>Not legal advice.</strong> Requirement lists are a practical subset to prepare for. Planned dates are indicative until the act is adopted. Check the law and your own counsel.</p>
+  <p>Data maintained by <a href="https://veribl.com">Veribl</a> · <a href="https://veribl.com/resources/espr-dpp-requirements-checklist">ESPR &amp; DPP requirements checklist</a> · <span id="reviewed"></span></p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
