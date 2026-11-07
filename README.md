@@ -2,7 +2,7 @@
 
 Which EU rules apply to a product, from when, and what data each one asks for: the ESPR Digital Product Passport, the battery passport, Detergents, Toy Safety, PPWR packaging, RoHS, REACH, Ecodesign, textile labelling and France's AGEC law. Every rule links to the law on EUR-Lex.
 
-**Checker:** https://veribl-inc.github.io/eu-product-rules/
+**Checker:** https://www.veribl.com/tools/eu-product-rules-checker (also mirrored here: https://veribl-inc.github.io/eu-product-rules/). The veribl.com version can email you the checklist as a spreadsheet.
 
 Pick a product category (e-bike, toy, clothing, TV, detergent…) and the checker lists the rules that apply today, the ones with a passport date already set in law, and the ones still planned, with the data points each rule needs. You can link straight to a result: `?product=e-bike` (add `&fr=1` for products also sold in France).
 
