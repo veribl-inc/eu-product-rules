@@ -552,7 +552,7 @@
       "description": "One of the first product groups in the ESPR working plan. The delegated act is in preparation; its content (expected: embodied carbon, recycled content) is not final.",
       "status": "planned",
       "statusNote": "Adoption expected Q4 2026 · passport around 2028 (indicative)",
-      "keyDate": "2028-01-01",
+      "keyDate": null,
       "documentationUrl": "https://single-market-economy.ec.europa.eu/single-market/digital-product-passport_en",
       "categories": [
         "steel",
@@ -592,7 +592,7 @@
       "description": "Planned for garments and textiles. No draft act yet; preparatory studies point to fibre composition, durability and recyclability.",
       "status": "planned",
       "statusNote": "Adoption expected Q3–Q4 2027 · passport 2029 at the earliest (indicative)",
-      "keyDate": "2029-01-01",
+      "keyDate": null,
       "documentationUrl": "https://single-market-economy.ec.europa.eu/single-market/digital-product-passport_en",
       "categories": [
         "textile",

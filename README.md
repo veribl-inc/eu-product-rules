@@ -2,7 +2,7 @@
 
 Which EU rules apply to a product, from when, and what data each one asks for: the ESPR Digital Product Passport, the battery passport, Detergents, Toy Safety, PPWR packaging, RoHS, REACH, Ecodesign, textile labelling and France's AGEC law. Every rule links to the law on EUR-Lex.
 
-**Checker:** https://veribl.github.io/eu-product-rules/
+**Checker:** https://veribl-inc.github.io/eu-product-rules/
 
 Pick a product category (e-bike, toy, clothing, TV, detergent…) and the checker lists the rules that apply today, the ones with a passport date already set in law, and the ones still planned, with the data points each rule needs. You can link straight to a result: `?product=e-bike` (add `&fr=1` for products also sold in France).
 
@@ -16,7 +16,7 @@ Two JSON files, free to use under CC BY 4.0:
 | [`data/eu-acts.json`](data/eu-acts.json) | 24 EU acts with CELEX numbers, common names, and EUR-Lex + ELI links |
 
 ```sh
-curl -s https://raw.githubusercontent.com/veribl/eu-product-rules/main/data/regulations.json \
+curl -s https://raw.githubusercontent.com/veribl-inc/eu-product-rules/main/data/regulations.json \
   | jq '.regulations[] | select(.categories | index("toy")) | {name, status, keyDate}'
 ```
 
@@ -53,7 +53,7 @@ Requirement lists are a practical subset to prepare for, not the full legal text
 
 ## Contributing
 
-A date moved, a delegated act was adopted, or a link broke? [Open an issue](https://github.com/veribl/eu-product-rules/issues) with a link to the official source.
+A date moved, a delegated act was adopted, or a link broke? [Open an issue](https://github.com/veribl-inc/eu-product-rules/issues) with a link to the official source.
 
 ## License
 
